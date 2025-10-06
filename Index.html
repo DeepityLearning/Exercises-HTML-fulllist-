@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prova Pratica Tag HTML - MDN Reference</title>
-    <meta name="description" content="Una demo che mostra l'uso dei tag HTML più comuni e semantici.">
-    
-    <link rel="stylesheet" href="style.css"> 
-    
+    <meta name="Esercitazione" content="Prova HTML">
+
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 0 auto; max-width: 800px; padding: 20px; }
-        h1, h2, h3 { color: #333; }
-        .example-section { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; background-color: #f9f9f9; }
-        blockquote { border-left: 5px solid #007bff; padding-left: 10px; margin: 15px 0; }
-        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; }
-        pre { background-color: #eee; padding: 10px; overflow-x: auto; }
-        kbd { border: 1px solid #999; padding: 1px 3px; background-color: #fff; border-bottom-width: 2px; border-radius: 3px; }
-    </style>
-    
-    <script>
-        function apriDialog() {
-            document.getElementById('dialog-demo').showModal();
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
         }
-    </script>
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        .example-section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        blockquote {
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+            margin: 15px 0;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        kbd {
+            border: 1px solid #999;
+            padding: 1px 3px;
+            background-color: #fff;
+            border-bottom-width: 2px;
+            border-radius: 3px;
+        }
+    </style>
+
+
 </head>
+
 <body>
     <header>
         <h1>Demo Completa dei Tag HTML</h1>
         <p>Esempi basati sulla Reference degli Elementi HTML di MDN.</p>
-        
+
         <nav>
             <ul>
                 <li><a href="#struttura">Struttura & Sezionamento</a></li>
@@ -41,88 +78,93 @@
     </header>
 
     <main>
-        
+
         <section id="struttura" class="example-section">
             <h2>1. Struttura e Sezionamento</h2>
-            
-            <p>Questo è un **<p>**aragrafo. I paragrafi separano blocchi di testo.</p>
+
+            <p>Questo è un 
+            <p>paragrafo. <p>I paragrafi separano blocchi di testo.</p>
             <hr>
-            
+
             <article>
-                <h3>Esempio di Articolo **<article>**</h3>
+                <h3>Esempio di Articolo </h3>
                 <p>Questo contenuto è indipendente e riutilizzabile, come un post del blog.</p>
                 <footer>
-                    <p>Pubblicato da: Mario Rossi. (Esempio di **<footer>** per l'articolo)</p>
-                </footer>
+                    <p>Pubblicato da: Mario Ciuccodibrutto. (Esempio di
+                    footer per l'articolo)</p>
+                    </footer>
             </article>
-            
+
             <aside>
-                <h4>Nota a Margine **<aside>**</h4>
-                <p>Questo contenuto è correlato ma secondario, come una **sidebar**.</p>
+                <h4>Nota a Margine <aside> Helllo</h4>
+                <p>Questo contenuto è correlato ma secondario, come una sidebar.</p>
             </aside>
-            
+
             <address>
                 <p>Contatta l'autore a:</p>
-                <p>Email: <a href="mailto:info@esempio.com">info@esempio.com</a> (Esempio di **<address>**)</p>
-            </address>
+                <p>Email: <a href="mailto:info@esempio.com">belinche.esempio@esempio.com</a> (Esempio di "
+                address")</p>
+                </address>
         </section>
 
         <section id="testo" class="example-section">
             <h2>2. Contenuto Testuale e In-line</h2>
-            
-            <p>La mia citazione preferita è: <q>Semplifica e chiarisci</q> (Tag **<q>** per citazione in linea).</p>
-            
+
+            <p>La mia citazione preferita è: <q>Semplifica e chiarisci</q> (Tag q per citazione in linea).</p>
+
             <blockquote>
                 <p>Un blocco di testo citato che occupa più righe.</p>
-                <cite>Fonte Importante</cite> (Tag **<blockquote>** e **<cite>**)
-            </blockquote>
-            
-            <dl>
-                <dt>HTML (**<dt>** Termine)</dt>
-                <dd>HyperText Markup Language (**<dd>** Descrizione)</dd>
-                <dt>CSS</dt>
-                <dd>Cascading Style Sheets</dd>
-            </dl>
-            
-            <p>In linea abbiamo: **<strong>** importanza (**<strong>**), **<b>** attenzione (**<b>**), **<em>** enfasi (**<em>**), **<i>** termini (**<i>**).</p>
-            <p>Il vecchio testo era <s>errato</s> (**<s>**). Il nuovo testo usa il carattere <small>piccolo</small> (**<small>**).</p>
-            
-            <p>Per salvare il file, premi <kbd>Ctrl</kbd> + <kbd>S</kbd> (**<kbd>** input tastiera).</p>
-            <p>Il codice per la funzione è: <code>console.log('Ciao');</code> (**<code>** codice in linea).</p>
+                <cite>Fonte Importante</cite> (Tag blockquote e cite)
+                </blockquote>
+
+                <dl>
+                    <dt>HTML (dt Termine)</dt>
+                    <dd>HyperText Markup Language (dd Descrizione)</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+
+                <p>In linea abbiamo: (strong) <strong> che da importanza , (b)<b> che da attenzione , (em)<em> 
+                                        che da enfasi , (i) <i> corsivo/enfasi .</p>
+                <p>Il vecchio testo era <s>errato</s> (s). Il nuovo testo usa il carattere (small) <small>piccolo</small>
+                        .</p>
+
+                <p>Per salvare il file, premi <kbd>Ctrl</kbd> + <kbd>S</kbd> (input tastiera).</p>
+                <p>Il codice per la funzione è: <code>console.log('Ciao');</code> (codice in linea).</p>
             
             <pre>
-Questo testo usa il tag **<pre>**
+Questo testo usa il tag "pre"
 e mantiene tutti gli spazi bianchi
     e le interruzioni di riga.
             </pre>
             
-            <p>Visita <abbr title="HyperText Markup Language">HTML</abbr> (**<abbr>**). La data di oggi è <time datetime="2025-10-06">6 Ottobre 2025</time> (**<time>**).</p>
+            <p>Visita <abbr title="HyperText Markup Language">HTML</abbr> (abbr). La data di oggi è <time datetime="2025-10-06">6 Ottobre 2025</time> (time).</p>
         </section>
 
         <section id="media" class="example-section">
             <h2>3. Media e Dati Tabulari</h2>
             
             <figure>
-                <img src="https://via.placeholder.com/300x150" alt="Un esempio di immagine segnaposto" style="max-width: 100%;">
-                <figcaption>Figura 1: Un semplice segnaposto (**<figcaption>**).</figcaption>
+                <img src="https://www.ferdinandofama.com/media/products/2788/SEGNAP-PB-1.jpg" alt="Un esempio di immagine segnaposto" style="max-width: 50%;">
+                <figcaption>Figura 1: Un semplice segnaposto "figcaption".</figcaption>
             </figure>
             
-            <video width="320" height="240" controls poster="https://via.placeholder.com/320x240">
-                <source src="video.mp4" type="video/mp4">
-                <p>Il tuo browser non supporta il tag **<video>**.</p>
+            <video width="320" height="240" controls autoplay muted="https://via.placeholder.com/320x240">
+                <source src="https://www.youtube.com/embed/StZcUAPRRac?si=2S8XjlYcvND-d5k_" type="video/mp4">
+                <p>Il tuo browser non supporta la riproduzione video.</p>
             </video>
 
             <table>
-                <caption>Statistiche Utenti (**<caption>**)</caption>
+                <caption>Statistiche Utenti (caption)</caption>
                 <thead>
-                    <tr> (**<tr>** Riga)
-                        <th>Nome (**<th>** Intestazione)</th>
+                    <tr>
+                        <th>Nome </th>
                         <th>Età</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Alice (**<td>** Dato)</td>
+                        <td>Alice</td>
                         <td>30</td>
                     </tr>
                     <tr>
@@ -131,7 +173,7 @@ e mantiene tutti gli spazi bianchi
                     </tr>
                 </tbody>
                 <tfoot>
-                    <tr> (**<tfoot>** Piè di Pagina)
+                    <tr> (tfoot)
                         <td>Totale</td>
                         <td>2 Utenti</td>
                     </tr>
@@ -143,33 +185,33 @@ e mantiene tutti gli spazi bianchi
             <h2>4. Moduli e Interattivi</h2>
             
             <form action="/submit-data" method="post">
-                <fieldset> (**<fieldset>**)
-                    <legend>Dati Personali (**<legend>**) </legend>
+                <fieldset> (fieldset)
+                    <legend>Dati Personali (legend) </legend>
                     
-                    <label for="nome">Nome:</label> (**<label>**)
-                    <input type="text" id="nome" name="nome" required> (**<input>**)
+                    <label for="nome">Nome:</label> (label)
+                    <input type="text" id="nome" name="nome" required> (input)
                     <br><br>
                     
                     <label for="scelta">Scegli un'opzione:</label>
-                    <select id="scelta" name="scelta"> (**<select>**)
-                        <optgroup label="Gruppo A"> (**<optgroup>**)
-                            <option value="op1">Opzione 1 (**<option>**)</option>
+                    <select id="scelta" name="scelta"> (select)
+                        <optgroup label="Gruppo A"> (optgroup)
+                            <option value="op1">Opzione 1 (option)</option>
                         </optgroup>
                         <option value="op2">Opzione 2</option>
                     </select>
                     <br><br>
                 </fieldset>
                 
-                <button type="submit">Invia Modulo (**<button>**)</button>
+                <button type="submit">Invia Modulo (button)</button>
             </form>
             
-            <details> (**<details>**)
-                <summary>Clicca per mostrare i dettagli (**<summary>**)</summary>
+            <details> (details)
+                <summary>Clicca per mostrare i dettagli (summary)</summary>
                 <p>Questi sono i contenuti nascosti che appaiono al click.</p>
             </details>
             
             <button onclick="apriDialog()">Apri Finestra di Dialogo</button>
-            <dialog id="dialog-demo"> (**<dialog>**)
+            <dialog id="dialog-demo"> (dialog)
                 <p>Questa è una finestra di dialogo modale.</p>
                 <button onclick="document.getElementById('dialog-demo').close()">Chiudi</button>
             </dialog>
@@ -179,7 +221,7 @@ e mantiene tutti gli spazi bianchi
 
     <footer>
         <hr>
-        <p>Prova vari tag HTML **<main>**, **<header>**, **<nav>** e **<footer>**.</p>
+        <p>Prova vari tag HTML <main> Main, <header> Header, <nav> Nav  e <footer> Footer.</p>
         <address><small>Prova effettuata 05 10 2025.</small></address>
     </footer>
 
