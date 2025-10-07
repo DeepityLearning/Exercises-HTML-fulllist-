@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Esempi di Tag HTML</title> <meta charset="UTF-8"> <meta name="description" content="Una pagina di esempio con tutti i tag HTML.">
+    <link rel="stylesheet" href="style.css"> <style>
+        /* <style>: Contiene stili CSS direttamente nel documento HTML. */
+        body { font-family: sans-serif; line-height: 1.6; }
+        header, footer { background-color: #f2f2f2; padding: 1rem; text-align: center; }
+        section { border: 1px solid #ccc; padding: 1rem; margin: 1rem 0; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 4px; }
+        nav a { margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guida Completa ai Tag HTML</h1>
+        <nav>
+            <a href="#testo">Testo</a>
+            <a href="#liste">Liste</a>
+            <a href="#media">Media</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sezioni">
+            <h2>Elementi di Sezione</h2>
+            <article>
+                <h3>Titolo dell'Articolo</h3>
+                <p>Questo è il contenuto di un articolo. Potrebbe essere un post di un blog.</p>
+            </article>
+
+            <aside>
+                <h4>Contenuti Correlati</h4>
+                <p>Link ad altri articoli interessanti.</p>
+            </aside>
+        </section>
+
+        <section id="testo">
+            <h2>Raggruppamento e Semantica del Testo</h2>
+
+            <p>
+                Questo è un paragrafo. Contiene del testo semplice. All'interno di un paragrafo, possiamo usare altri tag per formattare il testo.
+            </p>
+
+            <blockquote>
+                <p>"La conoscenza è potere."</p>
+                <cite>— Francis Bacon</cite> </blockquote>
+            
+            <p>
+                Usa <strong>questo tag</strong> per dare forte importanza al testo. Usa <em>questo tag</em> per enfatizzare il testo. Questo è un testo <b>in grassetto</b> senza importanza semantica, solo stilistica. Questo è un testo <i>in corsivo</i> senza enfasi, ad esempio per termini tecnici. Per evidenziare del testo, usa <mark>il tag mark</mark>. Questo è un <small>testo più piccolo</small>. Questo testo è stato <del>cancellato</del> <ins>inserito</ins>. H<sub>2</sub>O e E=mc<sup>2</sup>. </p>
+
+            <pre>
+                <code>
+function saluta() {
+  console.log("Ciao, mondo!");
+}
+</code>
+            </pre> <hr> </section>
+
+        <section id="liste">
+            <h2>Liste</h2>
+
+            <h3>Lista Non Ordinata</h3>
+            <ul>
+                <li>Primo elemento</li> <li>Secondo elemento</li>
+            </ul>
+
+            <h3>Lista Ordinata</h3>
+            <ol>
+                <li>Primo passo</li>
+                <li>Secondo passo</li>
+            </ol>
+            
+            <h3>Lista di Descrizione</h3>
+            <dl>
+                <dt>HTML</dt> <dd>HyperText Markup Language</dd> <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <section id="media">
+            <h2>Contenuti Incorporati (Media)</h2>
+            
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="Immagine segnaposto">
+                <figcaption>Questa è una didascalia per l'immagine.</figcaption> </figure>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Il tuo browser non supporta l'elemento audio.
+            </audio>
+
+            <h3>Video</h3>
+            <video width="400" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <track kind="subtitles" src="subtitles_it.vtt" srclang="it" label="Italiano"> Il tuo browser non supporta l'elemento video.
+            </video>
+        </section>
+        
+        <section id="tabelle">
+            <h2>Tabelle</h2>
+            <table>
+                <caption>Riepilogo Mensile</caption> <thead>
+                    <tr>
+                        <th scope="col">Mese</th> <th scope="col">Entrate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gennaio</td>
+                        <td>1000€</td> </tr>
+                    <tr>
+                        <td>Febbraio</td>
+                        <td>1200€</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Totale</td>
+                        <td>2200€</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Moduli (Form)</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Dati Personali</legend> <label for="nome">Nome:</label><br> <input type="text" id="nome" name="nome"><br> <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    
+                    <label for="messaggio">Messaggio:</label><br>
+                    <textarea id="messaggio" name="messaggio" rows="4" cols="50"></textarea><br> <label for="citta">Città:</label>
+                    <select id="citta" name="citta">
+                        <option value="milano">Milano</option> <option value="roma">Roma</option>
+                    </select><br>
+
+                    <button type="submit">Invia</button> </fieldset>
+            </form>
+        </section>
+        
+        <section id="interattivi">
+            <h2>Elementi Interattivi</h2>
+            
+            <details>
+                <summary>Mostra Dettagli</summary> <p>Queste sono le informazioni nascoste che appaiono quando si clicca.</p>
+            </details>
+
+            <dialog id="myDialog">
+                <p>Questa è una finestra di dialogo!</p>
+                <button onclick="document.getElementById('myDialog').close()">Chiudi</button>
+            </dialog>
+            <button onclick="document.getElementById('myDialog').showModal()">Apri Dialogo</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Informazioni di contatto:</p>
+        <address>
+            Scritto da Mario Rossi<br>
+            Visita il nostro sito: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
